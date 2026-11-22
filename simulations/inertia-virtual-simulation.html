@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!-- saved from url=(0054)file:///home/gakah/Neurollect/Simulations/inertia.html -->
+<!-- saved from url=(0090)https://joegakah.github.io/audread-simulations/simulations/inertia-virtual-simulation.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inertia Virtual Experiment</title>
-    <script src="./Inertia Virtual Experiment_files/saved_resource"></script>
+    <script src="./inertia-virtual-simulation_files/saved_resource"></script>
     <style>
         :root {
             --trolley-x: 0px;
@@ -128,13 +128,13 @@
         <div class="experiment-area" id="stage">
             <div id="motionLabel" class="motion-arrow" style="opacity: 0;">Motion ⟶</div>
             
-            <div id="trolley" class="trolley" style="--trolley-x: 50px;">
+            <div id="trolley" class="trolley" style="--trolley-x: 605px;">
                 <div class="wheel" style="left: 15px;"></div>
                 <div class="wheel" style="right: 15px;"></div>
             </div>
 
-            <div id="block" class="block" style="--trolley-x: 50px; --block-x: 0px; width: 70px; height: 70px;">
-                <span id="blockLabel">20kg</span>
+            <div id="block" class="block" style="--trolley-x: 605px; --block-x: 66px; width: 32px; height: 32px;">
+                <span id="blockLabel">1kg</span>
             </div>
 
             <div class="barrier" id="barrier"></div>
@@ -151,9 +151,9 @@
             <div class="space-y-4">
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-2 __web-inspector-hide-shortcut__">
-                        Object Mass: <span id="massDisplay" class="text-blue-600">20</span> kg
+                        Object Mass: <span id="massDisplay" class="text-blue-600">1</span> kg
                     </label>
-                    <input type="range" id="massSlider" min="1" max="20" value="5" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+                    <input type="range" id="massSlider" min="1" max="20" value="5" class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-blue-600" disabled="">
                     <div class="flex justify-between text-xs text-slate-500 mt-1">
                         <span>Low Inertia</span>
                         <span>High Inertia</span>
@@ -162,10 +162,10 @@
             </div>
 
             <div class="flex items-center justify-center gap-4">
-                <button id="btnPlay" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all active:scale-95">
+                <button id="btnPlay" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition-all active:scale-95 opacity-50 hidden" disabled="">
                     Start Experiment
                 </button>
-                <button id="btnReset" class="flex-1 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3 px-6 rounded-lg transition-all hidden">
+                <button id="btnReset" class="flex-1 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-3 px-6 rounded-lg transition-all">
                     Reset
                 </button>
             </div>
